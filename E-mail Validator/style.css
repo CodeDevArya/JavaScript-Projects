@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1vw 0;
+    background-color: rgb(38, 82, 84);
+    color: white;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 3vw;
+}
+
+nav li {
+    list-style: none;
+    font-weight: 500;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: rgb(113, 113, 113);
+}
+
+main {
+    min-height: 84.2vh;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    background-color: rgb(218, 255, 249);
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+#container input {
+    width: 20vw;
+    height: 50px;
+}
+
+#container input::placeholder {
+    margin: 2vw;
+}
+
+#cont2 {
+    background-color: rgb(218, 255, 249);
+    width: 80%;
+    margin: auto;
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cont2 input {
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: rgb(38, 82, 84);
+    border: none;
+    border-radius: 10vw;
+}
+
+#info {
+    background-color: rgb(218, 255, 249);
+    width: 80%;
+    margin: auto;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#resultCont div::first-letter {
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: rgb(38, 82, 84);
+    color: white;
+    padding: 0.5vw;
+    font-weight: 400;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:698px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #container input {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:344px) {
+    nav {
+        flex-direction: column;
+        width: 340px;
+    }
+
+    #cont2 input {
+        width: 100px;
+    }
+
+    #logo {
+        margin: 10px;
+    }
+
+    #container,
+    #cont2,
+    #info {
+        width: 300px;
+    }
+}
