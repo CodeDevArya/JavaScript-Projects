@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::selection {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(92, 141, 97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#panal {
+    width: 80%;
+    height: 85%;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#p-top {
+    width: 100%;
+    height: 15%;
+    background-color: rgb(39, 94, 46);
+    display: flex;
+    padding: 0px 20%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elem {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.box {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: rgb(39, 94, 46);
+    font-weight: 700;
+}
+
+#p-bottom {
+    width: 100%;
+    height: 85%;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(39, 94, 46);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.bubble:hover {
+    background-color: rgb(19, 63, 26);
+}
+
+.p-bottom-main {
+    display: flex;
+    flex-direction: column;
+}
+
+#start-btn {
+    padding: 10px;
+    border: 2px solid black;
+    background: rgb(39, 94, 46);
+    width: 20%;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10vh;
+    cursor: pointer;
+}
+.restart-btn {
+    padding: 10px;
+    border: 2px solid black;
+    background: rgb(39, 94, 46);
+    width: 100%;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10vh;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1127px) {
+    #p-bottom {
+        overflow: scroll;
+    }
+
+    #start-btn {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:916px) {
+#p-top{
+    flex-direction: column;
+    height: 25%;
+    flex-wrap: wrap;
+    align-items: start;
+    padding: 10px;
+}
+}
+@media screen and (max-width:340px) {
+#p-top{
+    height: 35%;
+}
+}
