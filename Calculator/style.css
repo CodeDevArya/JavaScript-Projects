@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    width: 320px;
+    min-height:max-content;
+    min-height: fit-content;
+    background-color: #000;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#calc-area {
+    width: 98%;
+    min-height: 150px;
+    margin-top: 10px;
+    max-height: fit-content;
+    border-radius: 3vmax;
+    margin: 4px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 1vw;
+    font-weight: 200;
+    font-size: 50px;
+    overflow-wrap: anywhere;
+}
+
+#calc-btn {
+    width: 98%;
+    border-radius: 3vmax;
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.row1 {
+    width: 100%;
+}
+
+#calc-btn button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+}
+
+.grey-bg {
+    background-color: #333333;
+    font-size: 25px;
+}
+
+.grey-bg:hover {
+    background-color: #292828;
+}
+
+.lightgrey-bg {
+    background-color: #A3A4A6;
+    font-size: 25px;
+    color: black !important;
+}
+
+.lightgrey-bg:hover {
+    background-color: #828283c0;
+}
+
+.orange-bg {
+    background-color: #FE9E05;
+    font-size: 35px;
+}
+
+.orange-bg:hover {
+    background-color: #f38d20;
+}
+
+#double-space {
+    width: 135px !important;
+    border-radius: 5vmax !important;
+}
