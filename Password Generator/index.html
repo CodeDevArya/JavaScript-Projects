@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="shortcut icon" href="img/reset-password.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Generate a <br> <span>Random Password</span></h2>
+        <div class="pass-box">
+            <input type="text" id="password" placeholder="Password" readonly><img
+                class="pass-img" src="img/content_copy_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        </div>
+        <div class="lengthRow">
+            <p>Password Length</p>
+            <span id="sliderValue"></span>
+        </div>
+        <input type="range" id="lengthSlider" min="4" max="20">
+        <div class="row">
+            <img src="img/radio_button_unchecked_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="checkBox">
+            <label for="uppercase" class="includeLabel">Include Uppercase Letters(A-Z)</label>
+            <input type="checkbox" id="uppercase">
+        </div>
+        <div class="row">
+            <img src="img/radio_button_unchecked_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="checkBox">
+            <label for="lowercase" class="includeLabel">Include Lowercase Letters(a-z)</label>
+            <input type="checkbox" id="lowercase">
+        </div>
+        <div class="row">
+            <img src="img/radio_button_unchecked_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="checkBox">
+            <label for="symbols" class="includeLabel">Include Symbols(#@-!)</label>
+            <input type="checkbox" id="symbols">
+        </div>
+        <div class="row">
+            <img src="img/radio_button_unchecked_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="checkBox">
+            <label for="number" class="includeLabel">Include Numbers(0-9)</label>
+            <input type="checkbox" id="number">
+        </div>
+
+        <button id="generate_btn"><img src="img/electric_bolt_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">Generate
+            Password</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #f0f0f0;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 10px 30px;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+}
+
+h2 {
+    margin: 15px 5px;
+    color: #1a237e;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h2 span {
+    text-decoration: 4px underline;
+    text-underline-offset: 10px;
+}
+
+.pass-box {
+    position: relative;
+    margin: 15px 0px;
+}
+
+#password {
+    width: 100%;
+    padding: 10px 20px;
+    outline: 0;
+    border: 3px solid #2600ff;
+    border-radius: 7px;
+    color: #1a237e;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#password::placeholder {
+    font-weight: 400;
+}
+
+.pass-img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.lengthRow {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.lengthRow p {
+    color: #1a237e;
+}
+
+#lengthSlider {
+    appearance: none;
+    background: #2600ff;
+    width: 100%;
+    height: 5px;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#lengthSlider::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #4400ff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    outline: 2px solid #4400ff;
+    cursor: pointer;
+}
+
+.row {
+    margin: 15px 0px;
+    box-shadow: 0px 0px 5px rgba(107, 107, 107, 0.2);
+    padding: 7px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.row input {
+    display: none;
+}
+
+.row label {
+    margin-inline: 5px;
+    font-weight: 600;
+}
+
+.checkBox {
+    cursor: pointer;
+}
+
+button {
+    position: relative;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #1a237e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    margin-block: 10px;
+    gap: 10px;
+}
